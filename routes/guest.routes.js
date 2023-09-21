@@ -5,7 +5,7 @@ const mongoose = require("mongoose");
 const Event = require("../models/Event.model");
 const Guest = require("../models/Guest.model");
 
-router.post("/guests", (req, res, next) => {
+router.post("/guests/create", (req, res, next) => {
   const { name, description, imageUrl, eventId } = req.body;
 
   const newGuest = {

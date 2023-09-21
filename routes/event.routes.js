@@ -6,7 +6,7 @@ const Event = require("../models/Event.model");
 const Guest = require("../models/Guest.model");
 
 //  POST /api/events  -  Creates a new event
-router.post("/events", (req, res, next) => {
+router.post("/events/create", (req, res, next) => {
   const { title, description, date, time, location, imageUrl } = req.body;
 
   const newEvent = {
